@@ -58,7 +58,7 @@ class handler(BaseHTTPRequestHandler):
             
             # 4. Define placeholder destination coordinates
             # REPLACE THESE WITH THE COORDINATES FROM calibrate.py
-            DESTINATION_CORNERS = [(2, 478), (-2, 1549), (1071, 1226), (1076, 525)]
+            DESTINATION_CORNERS = [(2, 478), (1076, 525), (1071, 1226), (-2, 1549)]
             dst_pts = np.float32(DESTINATION_CORNERS)
             
             # 5. Load template image to get target canvas size and for compositing
